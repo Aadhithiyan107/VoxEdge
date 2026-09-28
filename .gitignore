@@ -1,0 +1,115 @@
+# ============================================================
+# VoxEdge - Git Ignore
+# ============================================================
+
+# ------------------------------------------------------------
+# Python & Virtual Environments
+# ------------------------------------------------------------
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*$py.class
+.Python
+
+# Python tooling / caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+
+# ------------------------------------------------------------
+# Node.js / Frontend
+# ------------------------------------------------------------
+node_modules/
+frontend/node_modules/
+frontend/dist/
+.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# ------------------------------------------------------------
+# Environment Variables & Secrets
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+
+# ------------------------------------------------------------
+# Datasets / Audio Recordings
+# ------------------------------------------------------------
+data/
+*.wav
+*.mp3
+*.mpeg
+*.flac
+
+
+# ------------------------------------------------------------
+# Logs / Temporary Data
+# ------------------------------------------------------------
+*.log
+*.sqlite3
+tmp/
+temp/
+*.tmp
+*.bak
+
+
+# ------------------------------------------------------------
+# IDEs & Editors
+# ------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+
+# ------------------------------------------------------------
+# OS Files
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+
+# ------------------------------------------------------------
+# Experimental / Old Models
+# ------------------------------------------------------------
+models/voxedge_binary_*.keras
+models/voxedge_custom_*.keras
+models/voxedge_ds_cnn_best.keras
+models/voxedge_ds_cnn_final.keras
+
+
+# ------------------------------------------------------------
+# Experimental / Data-Collection Scripts
+# ------------------------------------------------------------
+training/analyze_live_audio.py
+training/convert_team_audio.py
+training/custom_model.py
+training/diagnose_custom_data.py
+training/download_mini_dataset.py
+training/record_custom.py
+training/record_keyword.py
+training/record_live.py
+training/train_custom.py
+training/train_custom_v2.py
+training/__pycache__/
+
+
+# ------------------------------------------------------------
+# Backup / Archive Files
+# ------------------------------------------------------------
+*.rar
+*.zip
+*.7z
