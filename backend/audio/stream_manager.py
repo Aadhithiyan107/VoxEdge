@@ -312,6 +312,7 @@ class AudioStreamManager:
 
             # In LISTENING state: check speech activity
             if not speech_active:
+                self.kws_service.recent_hits.clear()
                 if app_state.state in [AppState.SPEECH_DETECTED, AppState.VERIFYING]:
                     app_state.update_state(AppState.LISTENING)
                 continue
